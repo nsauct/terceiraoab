@@ -51,6 +51,7 @@
             text-align: center;
             width: 100%;
             max-width: 500px;
+            padding: 0 15px; /* Margem horizontal para evitar colagem nas laterais */
         }
 
         .grid-container img { 
@@ -58,6 +59,7 @@
             height: auto;
             border-radius: 10px;
             transition: transform 0.2s ease;
+            margin: 5px; /* Margem ao redor das imagens */
         }
 
         .grid-container img:hover {
@@ -98,7 +100,11 @@
 
             .grid-container {
                 gap: 15px;
-                padding: 0 10px;
+                padding: 0 20px; /* Aumentada a margem horizontal em telas menores */
+            }
+
+            .grid-container img {
+                margin: 10px; /* Margem extra em dispositivos móveis */
             }
 
             .social-grid img {
