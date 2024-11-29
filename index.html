@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERCEIRÃO</title>
+    <style>
+        body {
+            color: rgb(150, 2, 196);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #e54e1e;
+        }
+
+        .container h1 {
+            color: white;
+            margin-right: 20px;
+            font-size: 1.8em;
+        }
+
+        .container img {
+            max-width: 80px;
+            height: auto; 
+        }
+
+        .center-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .grid-container img { 
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .grid-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            margin-top: 30px;
+        }
+
+        .social-grid img {
+            transition: transform 0.2s ease;
+        }
+
+        .social-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 1.5em;
+                margin-right: 10px;
+            }
+
+            .container img {
+                max-width: 60px;
+            }
+
+            .grid-container {
+                gap: 15px;
+            }
+
+            .social-grid img {
+                width: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container h1 {
+                margin-right: 0;
+                margin-bottom: 10px;
+                font-size: 1.2em;
+            }
+
+            .center-wrapper {
+                margin-top: 20px;
+            }
+
+            .social-grid img {
+                width: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TERCEIRÃO</h1>
+        <img src="logo1.png" alt="Logo">
+    </div>
+
+    <div class="center-wrapper">
+        <div class="grid-container">
+            <a href="Textosdavi.hmtl.html"><img src="davi.jpg" alt="Davi"></a>
+            <a href="Textosandersonesaullo.html.html"><img src="andersonesaullo.jpg" alt="Anderson e Saullo"></a>
+            <a href="Textosjoaoegustavo.hmtl.html"><img src="juliaelis.jpg" alt="João e Gustavo"></a>
+            <a href="Textoslisejulia.html.html"><img src="gustavo.jpg" alt="Lise e Júlia"></a>
+        </div>
+    </div>
+
+    <div class="social-grid">
+        <a href="https://www.instagram.com/terceirao.cabb"><img src="instagram-removebg-preview.png" alt="Instagram" width="40px"></a>
+        <a href="https://www.youtube.com/channel/UCXYX8lS-XOQqjwGJOzrXKAg"><img src="youtube-removebg-preview.png" alt="YouTube" width="55px"></a>
+        <img src="gmaail-removebg-preview.png" alt="Gmail" width="65px">
+    </div>
+</body>
+</html>
